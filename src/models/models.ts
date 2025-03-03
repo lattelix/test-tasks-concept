@@ -1,7 +1,9 @@
 export interface IUser {
-  name: string;
-  age: number;
-  email: string;
-  telegram?: string;
-  site?: string;
+  id: string | null;
+  email: string | undefined;
+  name: string | undefined;
+  age: number | undefined;
+  telegram: string | undefined;
+  gender: "man" | "woman" | undefined;
+  specifyGender: boolean;
 }
