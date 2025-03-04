@@ -13,8 +13,8 @@ export default function Forms() {
       </nav>
       <main>
         <Routes>
-          <Route path="/forms/simple" element={<SimpleForm />} />
-          <Route path="/forms/advanced" element={<AdvancedForm />} />
+          <Route path="simple" element={<SimpleForm />} />
+          <Route path="advanced" element={<AdvancedForm />} />
         </Routes>
       </main>
     </>

@@ -11,7 +11,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/forms" element={<Forms />} />
+          <Route path="/forms/*" element={<Forms />} />
         </Routes>
       </main>
     </>
