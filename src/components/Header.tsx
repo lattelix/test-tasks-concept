@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
-import { BASE_ROUTE } from "./routes/base_route";
+import { BASE_ROUTE } from "../routes/base_route";
 
 export default function Header() {
   return (
