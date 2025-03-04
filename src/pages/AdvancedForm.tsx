@@ -2,15 +2,15 @@ import { useForm } from "react-hook-form";
 import { IUser } from "../models/models";
 import { useState } from "react";
 
-export default function Forms() {
+export default function AdvancedForm() {
   const clearForm: IUser = {
     id: null,
-    name: "",
-    age: undefined,
-    email: "",
-    telegram: "",
+    name: '',
+    age: null,
+    email: '',
+    telegram: '',
     specifyGender: false,
-    gender: undefined,
+    gender: null,
   };
 
   const { register, handleSubmit, reset, watch } = useForm<IUser>({
@@ -33,8 +33,8 @@ export default function Forms() {
       email: "my@sup.com",
       age: 22,
       name: "Rufy",
-      gender: undefined,
-      telegram: undefined,
+      gender: null,
+      telegram: '',
       specifyGender: false,
     },
   ]);
@@ -133,7 +133,7 @@ export default function Forms() {
                 <input
                   {...register("gender")}
                   type="radio"
-                  value="man"
+                  value="woman"
                   className="mr-1"
                 />
                 Жен

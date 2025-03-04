@@ -13,7 +13,6 @@ export default function Header() {
           <Link to="/forms" className="mr-2">
             Forms
           </Link>
-          <Link to="/advanced">Advanced</Link>
         </span>
       </nav>
     </header>

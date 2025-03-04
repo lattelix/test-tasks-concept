@@ -1,13 +1,9 @@
 export interface IUser {
   id: string | null;
-  email: string | undefined;
-  name: string | undefined;
-  age: number | undefined;
-  telegram: string | undefined;
-  gender: "man" | "woman" | undefined;
+  email: string;
+  name: string;
+  age: number | null;
+  telegram: string;
+  gender: "man" | "woman" | null;
   specifyGender: boolean;
 }
-
-// export interface FormData {
-//   users: IUser[];
-// }
