@@ -10,7 +10,10 @@ export default function Header() {
           <Link to="/" className="mr-2">
             Hero
           </Link>
-          <Link to="/forms">Forms</Link>
+          <Link to="/forms" className="mr-2">
+            Forms
+          </Link>
+          <Link to="/advanced">Advanced</Link>
         </span>
       </nav>
     </header>

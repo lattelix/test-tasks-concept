@@ -63,7 +63,7 @@ export default function Forms() {
     }
 
     if (form.id) {
-      setUsers([...users.filter((u) => u.id !== form.id), { ...form }]);
+      setUsers(users.map((u) => (u.id === form.id ? form : u)));
       setForm(clearForm);
     } else {
       setUsers([

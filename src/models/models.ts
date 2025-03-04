@@ -7,3 +7,7 @@ export interface IUser {
   gender: "man" | "woman" | undefined;
   specifyGender: boolean;
 }
+
+// export interface FormData {
+//   users: IUser[];
+// }

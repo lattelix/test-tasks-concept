@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./pages/Hero";
 import Forms from "./pages/Forms";
+import AdvancedForm from "./pages/AdvancedForm";
 import "./App.css";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/forms" element={<Forms />} />
+          <Route path="/advanced" element={<AdvancedForm />} />
         </Routes>
       </main>
     </>
