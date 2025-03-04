@@ -4,16 +4,17 @@ import Hero from "./pages/Hero";
 import Forms from "./pages/Forms";
 import "./App.css";
 import NotFound from "./pages/NotFound";
+import { BASE_ROUTE } from "./routes/base_route";
 
 export default function App() {
   return (
     <>
-      <Header />
+      {location.pathname !== "/404" && <Header />}
       <main>
         <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/forms/*" element={<Forms />} />
-          <Route path="*" element={<NotFound />} /> {/* Ловит все 404 */}
+          <Route path={BASE_ROUTE} element={<Hero />} />
+          <Route path={BASE_ROUTE + "/forms/*"} element={<Forms />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </>
