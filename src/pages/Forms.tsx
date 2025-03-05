@@ -14,6 +14,7 @@ export default function Forms() {
       </nav>
       <main>
         <Routes>
+          <Route index element={<SimpleForm />} /> {/* Дефолтный маршрут */}
           <Route path="simple" element={<SimpleForm />} />
           <Route path="advanced" element={<AdvancedForm />} />
         </Routes>
