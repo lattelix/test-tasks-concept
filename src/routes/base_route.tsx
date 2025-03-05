@@ -1,1 +1,1 @@
-export const BASE_ROUTE = '/test-tasks-concept/';
+export const BASE_ROUTE = '/test-tasks-concept';

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { BASE_ROUTE } from "../routes/base_route";
 
 export default function NotFound() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ export default function NotFound() {
   return (
     <div className="text-center p-10">
       <h1 className="text-4xl">404 - Страница не найдена</h1>
-      <p>Ой, заблудился! <a href="/test-tasks-concept/">На главную</a>.</p>
+      <p>Ой, заблудился! <a href={BASE_ROUTE + "/"}>На главную</a>.</p>
     </div>
   );
 }
